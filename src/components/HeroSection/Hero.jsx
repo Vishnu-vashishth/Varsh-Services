@@ -36,7 +36,9 @@ export default function CallToActionWithIllustration() {
             colorScheme={'cyan'}
             bg={'white.400'}
             _hover={{ bg: 'cyan.500' }}>
+            <a href="https://drive.google.com/file/d/1IKhFJZlxR0Xf3h3ulQspvJU1CzsT0y-G/view" target="__blank"> 
             Download Now
+            </a>
           </Button>
           <Button rounded={'full'} px={6}>
             Learn more

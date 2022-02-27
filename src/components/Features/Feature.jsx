@@ -43,7 +43,7 @@ export default function gridListWithCTA() {
               Services We Provides You
             </chakra.h2>
             <Button colorScheme="yellow" size="md">
-              Contact Now
+          <a href='tel:+916387681558'>Contact Us</a>
             </Button>
           </VStack>
         </GridItem>
@@ -65,17 +65,32 @@ export default function gridListWithCTA() {
         gap={{ base: '8', sm: '12', md: '16' }}>
         <Feature
           heading={'Business Development Solutions'}
-          text={'Short text describing one of you features/service'}
+          text={<ul style={{margin:"15px"}}>
+          <li>Startup Assistance</li>
+          <li>Human Resource Management</li>
+          <li>Customer Relationship Management</li>
+          <li>IT Solutions</li>
+        </ul>}
         />
         <Feature
           heading={'WEB Development & CRM Software'}
-          text={'Short text describing one of you features/service'}
+          text={<ul style={{margin:"15px"}}>
+          <li>UI/UX Development</li>
+          <li>WEBSITE Development</li>
+          <li>APP Development</li>
+          <li>CRM Softwares for Every Purposes</li>
+        </ul>}
         />
+        
         <Feature
           heading={'Digital Marketing & Informetic Center'}
-          text={'Short text describing one of you features/service'}
+          text={<ul style={{margin:"15px"}}>
+          <li>Online Marketing</li>
+          <li>Advertisement Ads Creation</li>
+          <li>Lead Generation</li>
+          <li>Sales Generation</li>
+        </ul>}
         />
-       
       </Grid>
     </Box>
   );

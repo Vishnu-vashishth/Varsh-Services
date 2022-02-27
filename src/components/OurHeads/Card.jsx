@@ -8,10 +8,7 @@ import {
     Image,
   } from '@chakra-ui/react';
   
-  const IMAGE =
-    'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80';
-  
-  export default function ProductSimple() {
+  export default function ProductSimple({name,designation,image}) {
     return (
       <Center py={12}>
         <Box
@@ -37,7 +34,7 @@ import {
               pos: 'absolute',
               top: 5,
               left: 0,
-              backgroundImage: `url(${IMAGE})`,
+              // backgroundImage: `url(${})`,
               filter: 'blur(15px)',
               zIndex: -1,
             }}
@@ -48,27 +45,19 @@ import {
             }}>
             <Image
               rounded={'lg'}
-              height={230}
+              height={250}
               width={282}
               objectFit={'cover'}
-              src={IMAGE}
+              src={image}
             />
           </Box>
           <Stack pt={10} align={'center'}>
-            <Text color={'gray.700'} fontSize={'sm'} textTransform={'uppercase'}>
-             ADARSH  GUPTA
+            <Text color={'gray.700'} fontSize={'xl'} fontWeight={600} textTransform={'uppercase'} >
+             {name}
             </Text>
             <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={800}>
-              CEO
+              {designation}
             </Heading>
-            {/* <Stack direction={'row'} align={'center'}>
-              <Text fontWeight={800} fontSize={'xl'}>
-                $57
-              </Text>
-              <Text textDecoration={'line-through'} color={'gray.600'}>
-                $199
-              </Text>
-            </Stack> */}
           </Stack>
         </Box>
       </Center>

@@ -76,7 +76,7 @@ export default function SmallWithLogoLeft() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         {/* <Logo /> */}
-        <Text>© {date} VARSH SERVICES PVT LTD. All rights reserved</Text>
+        <Text style={{fontFamily:"cursive,Poppins,sans-serif"}}>© {date} VARSH SERVICES PVT LTD. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
             <FaTwitter />
