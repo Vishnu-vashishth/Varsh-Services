@@ -58,7 +58,7 @@ form?.addEventListener("submit", handleSubmit);
             </div>
           </a>
 
-          <a href="https://calendly.com/singhdikshit69/30min" target="_blank" rel="noreferrer">
+          <a href="/">
             <div className="contact_info">
               <i className="uil uil-calendar-alt contact_icon"></i>
               <div>
@@ -68,7 +68,7 @@ form?.addEventListener("submit", handleSubmit);
             </div>
           </a>
 
-          <a href="https://twitter.com/Dannysingh6913" target="_blank" rel="noreferrer">
+          <a href="/">
             <div className="contact_info">
               <i className="uil uil-twitter-alt contact_icon"></i>
               <div>
